@@ -6,4 +6,4 @@ export default function Header(){
             <Title>Geração de energia</Title>
         </Container>
     )
-}
+};

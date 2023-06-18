@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
+
 import { theme } from '../../theme';
 
 export const Container = styled.View`
     padding: 24px;
     background-color: ${theme.colors.primary};
-
 
     border-radius: 40px;
 

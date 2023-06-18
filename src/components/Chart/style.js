@@ -1,4 +1,5 @@
 import { styled } from "styled-components/native";
+
 import { theme } from "../../theme";
 
 export const Container = styled.View`
@@ -7,10 +8,6 @@ export const Container = styled.View`
   margin-bottom: 8px;
 
   border-radius: 40px;
-
-
 `;
 
-export const ChartContent = styled.ScrollView`
-
-`
+export const ChartContent = styled.ScrollView``;

@@ -1,4 +1,7 @@
 import { useContext } from "react";
+
+import { AppContext } from "../../contexts/AppContext";
+
 import {
   Container,
   ReceivedValue,
@@ -8,7 +11,6 @@ import {
   ExpectedValueText,
   ReceivedValueText,
 } from "./style";
-import { AppContext } from "../../contexts/AppContext";
 
 export default function ProgressChart() {
   const { expectedGenerationValue, apiData } = useContext(AppContext);
@@ -19,7 +21,7 @@ export default function ProgressChart() {
         <ExpectedValueLabel>Valor Esperado</ExpectedValueLabel>
         <ExpectedValueText>{expectedGenerationValue.toFixed(2)} kWh</ExpectedValueText>
       </ExpectedValue>
-      <ReceivedValue style={{ width: apiData ? apiData?.data?.totals?.percentage : 0  + "%" }}>
+      <ReceivedValue totalPercentage={apiData?.data?.totals?.percentage}>
         <ReceivedValueLabel>Valor Total</ReceivedValueLabel>
         <ReceivedValueText>{apiData?.data?.totals?.kwh.toFixed(2)} kWh</ReceivedValueText>
       </ReceivedValue>

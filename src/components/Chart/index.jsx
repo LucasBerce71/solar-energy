@@ -1,13 +1,14 @@
 import { useContext, useEffect, useState } from "react";
-import { theme } from "../../theme";
-import { ChartContent, Container } from "./style";
 import { VictoryLine, VictoryChart } from "victory-native";
+
 import { AppContext } from "../../contexts/AppContext";
 
+import { theme } from "../../theme";
+
+import { ChartContent, Container } from "./style";
+
 export default function Chart() {
-
   const {chartData, chartSize } = useContext(AppContext);
-
 
   return (
     <Container>
@@ -26,4 +27,4 @@ export default function Chart() {
       </ChartContent>
     </Container>
   );
-}
+};

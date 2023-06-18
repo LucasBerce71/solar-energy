@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+
 import { theme } from "../../theme";
 
 export const Container = styled.View`
@@ -21,7 +22,6 @@ export const ExpectedValue = styled.View`
 
   flex-direction: row;
   justify-content: flex-end;
-
 `;
 
 export const ReceivedValue = styled.View`
@@ -31,28 +31,31 @@ export const ReceivedValue = styled.View`
   border-top-right-radius: 100px;
 
   position: absolute;
+
   top: 0;
   left: 0;
 
   height: 100%;
+  width: ${props => props.totalPercentage || 0 }%;
 
   background-color: ${theme.colors.tertiary};
-
 `;
 
 export const ExpectedValueLabel= styled.Text`
   position: absolute;
+
   color: ${theme.colors.white};
+  
   top: -20px;
 
   font-size: 11px;
-
 `;
-
 
 export const ReceivedValueLabel= styled.Text`
   position: absolute;
+
   top: -20px;
+  
   color: ${theme.colors.white};
 
   font-size: 11px;
@@ -61,17 +64,19 @@ export const ReceivedValueLabel= styled.Text`
 
 export const ExpectedValueText= styled.Text`
   position: absolute;
+
   color: ${theme.colors.white};
+  
   bottom: -20px;
 
   font-size: 14px;
-
 `;
-
 
 export const ReceivedValueText= styled.Text`
   position: absolute;
+
   bottom: -20px;
+  
   color: ${theme.colors.white};
 
   font-size: 14px;

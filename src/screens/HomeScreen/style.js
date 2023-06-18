@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+
 import { theme } from "../../theme";
 
 export const Container = styled.View`
@@ -7,10 +8,9 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: 18px;
+  font-weight: 300;
 
   color: ${theme.colors.white};
-
-  font-weight: 300;
 `;
 
 export const Headline = styled.View`
@@ -19,6 +19,4 @@ export const Headline = styled.View`
   justify-content: space-between;
 
   margin-bottom: 48px;
-
-  
 `;

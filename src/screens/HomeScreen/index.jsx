@@ -1,11 +1,14 @@
-import { Container, Headline, Title } from "./style";
+import { useContext } from "react";
+import { AntDesign } from "@expo/vector-icons";
+
 import Filter from "../../components/Filter";
 import CardResult from "../../components/CardResult";
-import Chart from "../../components/Chart";
-import { useContext } from "react";
-import { AppContext } from "../../contexts/AppContext";
-import { AntDesign } from "@expo/vector-icons";
 import ProgressChart from "../../components/ProgressChart";
+import Chart from "../../components/Chart";
+
+import { AppContext } from "../../contexts/AppContext";
+
+import { Container, Headline, Title } from "./style";
 
 export default function HomeScreen() {
   const { apiData } = useContext(AppContext);
@@ -32,4 +35,4 @@ export default function HomeScreen() {
       />
     </Container>
   );
-}
+};

@@ -1,9 +1,14 @@
 import { StatusBar } from "react-native";
+
 import HomeScreen from "./src/screens/HomeScreen";
-import { theme } from "./src/theme";
+
 import Header from "./src/components/Header";
-import { Container } from "./src/styles";
+
 import { AppProvider } from "./src/contexts/AppContext";
+
+import { theme } from "./src/theme";
+
+import { Container } from "./src/styles";
 
 export default function App() {
 
